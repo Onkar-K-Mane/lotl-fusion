@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0",
+  "description": "SHA-256 manifest for every dataset file used by lotl-fusion. Populated by notebooks/02_data_assembly.ipynb.",
+  "last_updated": null,
+  "sources": {
+    "mpsd": {
+      "url": "https://github.com/das-lab/mpsd",
+      "paper": "Fang et al. 2021, Neurocomputing",
+      "license": "see repo",
+      "files": []
+    },
+    "invoke_evasion": {
+      "url": "https://github.com/GhostPack/Invoke-Evasion",
+      "paper": "Bohannon/Holmes 2017 (derived AST features)",
+      "license": "see repo",
+      "files": []
+    },
+    "fa2y_malicious": {
+      "url": "https://github.com/Fa2y/Malicious-PowerShell-Dataset",
+      "source": "Malware Bazaar + Triage",
+      "license": "see repo",
+      "files": []
+    },
+    "dessertlab_offensive": {
+      "url": "https://huggingface.co/datasets/dessertlab/offensive-powershell",
+      "license": "see dataset card",
+      "files": []
+    },
+    "magic_cadets_graphs": {
+      "url": "https://github.com/FDUDSDE/MAGIC",
+      "paper": "Jia et al. 2024, USENIX Security",
+      "dataset_origin": "DARPA TC E3-CADETS",
+      "license": "public domain (DARPA TC)",
+      "files": []
+    }
+  },
+  "processed_artifacts": {
+    "powershell_corpus_deduped.parquet": {
+      "sha256": null,
+      "row_count": null,
+      "columns": ["sha256", "source", "label", "script_text", "first_seen_date"]
+    }
+  }
+}

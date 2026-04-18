@@ -1,0 +1,41 @@
+# Pinned to the April 2026 Colab free-tier snapshot verified in notebooks/01_env_check.ipynb.
+# Re-pin only if the env-check notebook fails against a later snapshot.
+#
+# Runtime: Colab T4 (compute capability 7.5 — bf16 unsupported, fp16 only).
+# Python 3.12, CUDA 12.8.
+
+# Core DL
+torch==2.10.0
+torch-geometric==2.7.0
+
+# Transformers stack (v5 — breaking changes from v4 tutorials)
+transformers==5.5.4
+accelerate==1.13.0
+bitsandbytes==0.49.2
+peft==0.18.1
+huggingface_hub==1.10.1
+
+# Classical ML + explainability
+xgboost==3.2.0
+shap==0.51.0
+scikit-learn==1.6.1
+
+# Data handling
+numpy<2.1
+pandas>=2.2
+pyarrow>=17
+
+# EVTX parsing (Rust-backed — 10-50x faster than python-evtx)
+evtx>=0.8
+
+# Concept drift (install from git; PyPI `tesseract` is the OCR engine — wrong package)
+# pip install git+https://github.com/s2labres/tesseract-ml-release.git
+# (kept out of this file so `pip install -r` doesn't hit a git dep at install time;
+#  notebooks install it explicitly)
+
+# Experiment tracking
+wandb==0.25.1
+
+# Misc
+tqdm>=4.66
+pyyaml>=6.0

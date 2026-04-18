@@ -1,0 +1,104 @@
+# configs/default.yaml
+# Default hyperparameters. Per-experiment configs override fields selectively.
+
+project: lotl-fusion
+run_name: default
+seed: 42  # overridden to [42, 1337, 2024] in multi-seed sweeps
+
+# --- Runtime ---
+runtime:
+  device: cuda
+  precision: fp16        # T4 hardware — bf16 is emulated, do not use
+  gradient_checkpointing: true
+  num_workers: 2         # Colab has 2 CPU cores on the free tier
+
+# --- Paths (Colab-specific; overridden in configs/colab.yaml) ---
+paths:
+  data_root: /content/data
+  ckpt_root: /content/ckpt
+  drive_ckpt: /content/drive/MyDrive/lotl-fusion/ckpt
+  drive_logs: /content/drive/MyDrive/lotl-fusion/logs
+  manifest: data/manifest.json
+
+# --- Stage 1: XGBoost triage ---
+triage:
+  features:
+    - char_ngram_tfidf    # 3-5 chars
+    - token_stats         # length, entropy, upper-ratio, digit-ratio
+    - keyword_hits        # IEX, -enc, DownloadString, etc.
+    - sigma_rule_matches  # Chainsaw/Hayabusa-style boolean flags
+  xgboost:
+    n_estimators: 500
+    max_depth: 6
+    learning_rate: 0.05
+    subsample: 0.8
+    colsample_bytree: 0.8
+    eval_metric: aucpr
+  calibration: isotonic   # for the probability passed to fusion
+  shap_top_k: 16          # dim of the SHAP vector passed to fusion
+
+# --- Stage 2a: text branch (DistilBERT) ---
+text:
+  model_name: distilbert-base-uncased
+  max_seq_length: 512
+  stride: 128             # sliding window for >512-token scripts
+  pooling: mean_cls       # mean over CLS embeddings of all windows
+  training:
+    per_device_train_batch_size: 1
+    per_device_eval_batch_size: 4
+    gradient_accumulation_steps: 16    # effective batch = 16
+    num_train_epochs: 3
+    learning_rate: 2.0e-5
+    weight_decay: 0.01
+    warmup_ratio: 0.06
+    fp16: true
+    bf16: false
+    gradient_checkpointing: true
+    save_strategy: steps
+    save_steps: 500
+    save_total_limit: 2
+    logging_steps: 50
+    report_to: [wandb]
+
+# --- Stage 2b: graph branch (GATv2 over MAGIC .pkl) ---
+graph:
+  source: magic_pkl       # do not parse raw Avro
+  dataset: e3_cadets
+  model:
+    type: gatv2
+    num_layers: 2
+    hidden_dim: 64
+    num_heads: 4
+    concat: true          # layer 1 concat, layer 2 mean (see model code)
+    dropout: 0.3
+    activation: elu
+  sampler:
+    type: NeighborLoader
+    num_neighbors: [20, 10]
+    batch_size: 512
+  training:
+    num_epochs: 50
+    learning_rate: 1.0e-3
+    weight_decay: 5.0e-4
+    fp16: true
+
+# --- Stage 3: fusion head ---
+fusion:
+  head: gated             # one of: avg, stack, cross_attn, gated, soft_moe
+  text_dim: 768
+  graph_dim: 64
+  triage_dim: 17          # 1 prob + 16 SHAP
+  hidden_dim: 256
+  dropout: 0.2
+
+# --- Evaluation ---
+eval:
+  metrics: [precision, recall, f1_macro, f1_weighted, pr_auc, tpr_at_fpr_1e-3, tpr_at_fpr_1e-4, ece]
+  seeds: [42, 1337, 2024]
+  temporal:
+    enforce_c1: true
+    bucket: quarterly
+    aut_metric: f1
+  adversarial:
+    obfuscators: [invoke_obfuscation, cradle_crafter, psobf]
+    report_degradation_per_technique: true
