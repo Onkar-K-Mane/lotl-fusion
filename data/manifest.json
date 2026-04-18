@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "description": "SHA-256 manifest for every dataset file used by lotl-fusion. Populated by notebooks/02_data_assembly.ipynb.",
-  "last_updated": "2026-04-18T18:03:52.697423+00:00",
+  "last_updated": "2026-04-18T21:05:56.109775+00:00",
   "sources": {
     "mpsd": {
       "url": "https://github.com/das-lab/mpsd",
@@ -207,7 +207,7 @@
   },
   "processed_artifacts": {
     "powershell_corpus_deduped.parquet": {
-      "sha256": "604afb7b85a05c67db4d758353439af1de510abf92f4e826079c1dd81536dc55",
+      "sha256": "40124e8816e1d14ee67e8f20282f173461ec4faa011c799393faa846ec7da452",
       "row_count": 13209,
       "columns": [
         "sha256",
@@ -215,7 +215,10 @@
         "label",
         "script_text",
         "first_seen_date"
-      ]
+      ],
+      "dated_count": 8020,
+      "date_min": "2021-08-30 08:20:46+00:00",
+      "date_max": "2023-08-06 21:26:40+00:00"
     }
   }
 }
