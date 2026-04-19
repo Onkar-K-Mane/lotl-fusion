@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "description": "SHA-256 manifest for every dataset file used by lotl-fusion. Populated by notebooks/02_data_assembly.ipynb.",
-  "last_updated": "2026-04-18T21:05:56.109775+00:00",
+  "last_updated": "2026-04-19T04:48:57.717631+00:00",
   "sources": {
     "mpsd": {
       "url": "https://github.com/das-lab/mpsd",
@@ -203,12 +203,46 @@
       "dataset_origin": "DARPA TC E3-CADETS",
       "license": "public domain (DARPA TC)",
       "files": []
+    },
+    "ps_gallery": {
+      "url": "https://www.powershellgallery.com/api/v2",
+      "method": "OData API, top-N by download count, .nupkg ZIP extraction",
+      "license": "per-package; all publicly installable",
+      "files": []
+    },
+    "microsoft_signed_modules": {
+      "repos": [
+        "Azure-PowerShell",
+        "PowerShell-Docs",
+        "PSScriptAnalyzer",
+        "PowerShellGet"
+      ],
+      "license": "MIT (Azure-PowerShell, PowerShell-Docs), other per-repo",
+      "files": []
+    },
+    "redteam_frameworks": {
+      "repos": [
+        "PoshC2",
+        "Empire",
+        "Nishang",
+        "PowerSploit"
+      ],
+      "note": "Offensive-security tooling; label=1 (malicious intent)",
+      "license": "BSD/MIT/GPL, per-repo",
+      "files": []
+    },
+    "atomic_red_team": {
+      "url": "https://github.com/redcanaryco/atomic-red-team",
+      "license": "MIT",
+      "note": "PowerShell executors extracted from atomic YAML definitions; ATT&CK-mapped",
+      "attck_map": "data/processed/atomic_attck_map.json",
+      "files": []
     }
   },
   "processed_artifacts": {
     "powershell_corpus_deduped.parquet": {
-      "sha256": "40124e8816e1d14ee67e8f20282f173461ec4faa011c799393faa846ec7da452",
-      "row_count": 13209,
+      "sha256": "56fee8b31714193a78d6d4538b6efc60b77343ad75fbcececfa61013aae7988b",
+      "row_count": 19386,
       "columns": [
         "sha256",
         "source",
@@ -218,7 +252,25 @@
       ],
       "dated_count": 8020,
       "date_min": "2021-08-30 08:20:46+00:00",
-      "date_max": "2023-08-06 21:26:40+00:00"
+      "date_max": "2023-08-06 21:26:40+00:00",
+      "benign_count": 9776,
+      "malicious_count": 9610,
+      "source_distribution": {
+        "mpsd_malicious": 6078,
+        "mpsd_benign": 4309,
+        "ms_azure_powershell": 2832,
+        "ps_gallery": 2367,
+        "fa2y_malicious": 1893,
+        "dessertlab_offensive": 888,
+        "atomic_red_team": 636,
+        "ms_psscriptanalyzer": 214,
+        "redteam_empire": 84,
+        "ms_powershell_docs": 27,
+        "ms_powershellget": 27,
+        "redteam_nishang": 16,
+        "redteam_poshc2": 11,
+        "redteam_powersploit": 4
+      }
     }
   }
 }
