@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "description": "SHA-256 manifest for every dataset file used by lotl-fusion. Populated by notebooks/02_data_assembly.ipynb.",
-  "last_updated": "2026-04-19T04:48:57.717631+00:00",
+  "last_updated": "2026-04-21T02:22:20.597823+00:00",
   "sources": {
     "mpsd": {
       "url": "https://github.com/das-lab/mpsd",
@@ -9,83 +9,83 @@
       "license": "see repo",
       "files": [
         {
-          "path": "/content/data/raw/mpsd/malicious_pure/1.ps1",
+          "path": "/kaggle/working/data/raw/mpsd/malicious_pure/1.ps1",
           "sha256": "55d87ece4236aeb9c68d29489df4568a98b6f25294fa08a34d3086a4386fede4"
         },
         {
-          "path": "/content/data/raw/mpsd/malicious_pure/10.ps1",
+          "path": "/kaggle/working/data/raw/mpsd/malicious_pure/10.ps1",
           "sha256": "09af554f88850c5beb4f3ce2631f4e49552e0482890e16dc7e57a500aabf4472"
         },
         {
-          "path": "/content/data/raw/mpsd/malicious_pure/100.ps1",
+          "path": "/kaggle/working/data/raw/mpsd/malicious_pure/100.ps1",
           "sha256": "1f8a30d2cc7a2ac43d3e0a653b1cf80fa5b01c9c9755eef67525657a7134723f"
         },
         {
-          "path": "/content/data/raw/mpsd/malicious_pure/1000.ps1",
+          "path": "/kaggle/working/data/raw/mpsd/malicious_pure/1000.ps1",
           "sha256": "b6661bc9233551fb07b96d78c87917d5534e1f0eb1be25894eb5b5c9be7bd767"
         },
         {
-          "path": "/content/data/raw/mpsd/malicious_pure/1001.ps1",
+          "path": "/kaggle/working/data/raw/mpsd/malicious_pure/1001.ps1",
           "sha256": "3a1192b8a35398e9308e52f26aeb1640b768f07afb1f7ccc19c5026410bef66b"
         },
         {
-          "path": "/content/data/raw/mpsd/malicious_pure/1002.ps1",
+          "path": "/kaggle/working/data/raw/mpsd/malicious_pure/1002.ps1",
           "sha256": "2324940d78bfb9053bf84c8120b6c9a9ecd7f3cfca921b780b9794b4c79f7f52"
         },
         {
-          "path": "/content/data/raw/mpsd/malicious_pure/1003.ps1",
+          "path": "/kaggle/working/data/raw/mpsd/malicious_pure/1003.ps1",
           "sha256": "f4500b92db0550015d159a3208029e18921be54bab52edc03a9fae5da7e8502e"
         },
         {
-          "path": "/content/data/raw/mpsd/malicious_pure/1004.ps1",
+          "path": "/kaggle/working/data/raw/mpsd/malicious_pure/1004.ps1",
           "sha256": "bcbce2908f595ea3509596825a9c7850647631a1f9112b5d3ea76c27f7c8dddd"
         },
         {
-          "path": "/content/data/raw/mpsd/malicious_pure/1005.ps1",
+          "path": "/kaggle/working/data/raw/mpsd/malicious_pure/1005.ps1",
           "sha256": "89b086ed34eda89863ceff55a274adf06c73621e05cb1b71ed72b41426e0c274"
         },
         {
-          "path": "/content/data/raw/mpsd/malicious_pure/1006.ps1",
+          "path": "/kaggle/working/data/raw/mpsd/malicious_pure/1006.ps1",
           "sha256": "0ed048e086429a56083530530c21917a22f1e6a3d0ca437572d558d2aadf6572"
         },
         {
-          "path": "/content/data/raw/mpsd/malicious_pure/1007.ps1",
+          "path": "/kaggle/working/data/raw/mpsd/malicious_pure/1007.ps1",
           "sha256": "3daf6c1e98f5ff9dae9ab95b95458aadfcb99167b5c24298df4dd3ef217a15cc"
         },
         {
-          "path": "/content/data/raw/mpsd/malicious_pure/1008.ps1",
+          "path": "/kaggle/working/data/raw/mpsd/malicious_pure/1008.ps1",
           "sha256": "7a1464282e48f0334bc3cb3b00dc15f2995f3e1a1fc28226cb3c823d5ad15c01"
         },
         {
-          "path": "/content/data/raw/mpsd/malicious_pure/1009.ps1",
+          "path": "/kaggle/working/data/raw/mpsd/malicious_pure/1009.ps1",
           "sha256": "7347d4c91d2961086d51666c685a45190d36c32a48f33c861fcc60e7254b2b8d"
         },
         {
-          "path": "/content/data/raw/mpsd/malicious_pure/101.ps1",
+          "path": "/kaggle/working/data/raw/mpsd/malicious_pure/101.ps1",
           "sha256": "ec87ffe423486c742f66bfbae0fbfa9bce58ff44028f14de163c653844d0e326"
         },
         {
-          "path": "/content/data/raw/mpsd/malicious_pure/1010.ps1",
+          "path": "/kaggle/working/data/raw/mpsd/malicious_pure/1010.ps1",
           "sha256": "dec8a4d3ccc32f3e2838267dd84e63829e4d36d72ed68c05a25f19dfd2c0bfd3"
         },
         {
-          "path": "/content/data/raw/mpsd/malicious_pure/1011.ps1",
+          "path": "/kaggle/working/data/raw/mpsd/malicious_pure/1011.ps1",
           "sha256": "4fe631e52b5504794f51f032a8b2e938ee6de0bb1bbd17a5ac776ba33c5b5124"
         },
         {
-          "path": "/content/data/raw/mpsd/malicious_pure/1012.ps1",
+          "path": "/kaggle/working/data/raw/mpsd/malicious_pure/1012.ps1",
           "sha256": "93ff8f547acac23209de924b577641156381f76a37c255eed1123acb5fc9d282"
         },
         {
-          "path": "/content/data/raw/mpsd/malicious_pure/1013.ps1",
+          "path": "/kaggle/working/data/raw/mpsd/malicious_pure/1013.ps1",
           "sha256": "16e4c3114f6bf3ce35ffafe73338988f888cd6c4f104934dd0357ee9550fb2b3"
         },
         {
-          "path": "/content/data/raw/mpsd/malicious_pure/1014.ps1",
+          "path": "/kaggle/working/data/raw/mpsd/malicious_pure/1014.ps1",
           "sha256": "bf368f8946870fe6be117f53cf794019d80d7e9174106eea0dbc9da638ac13f0"
         },
         {
-          "path": "/content/data/raw/mpsd/malicious_pure/1015.ps1",
+          "path": "/kaggle/working/data/raw/mpsd/malicious_pure/1015.ps1",
           "sha256": "15763b8fa571f908017e208733d463c0b854ce0f0b2036a2426bf39a7ef87456"
         }
       ]
@@ -96,11 +96,11 @@
       "license": "see repo",
       "files": [
         {
-          "path": "/content/data/raw/invoke_evasion/datasets/BlackBoxData.ast.csv.7z",
+          "path": "/kaggle/working/data/raw/invoke_evasion/datasets/BlackBoxData.ast.csv.7z",
           "sha256": "b2e07eea987c262e5054ed334026a25979be2d8400a293620ce3464de58a9fe0"
         },
         {
-          "path": "/content/data/raw/invoke_evasion/datasets/PowerShellCorpus.ast.csv.7z",
+          "path": "/kaggle/working/data/raw/invoke_evasion/datasets/PowerShellCorpus.ast.csv.7z",
           "sha256": "690ca2fb433eba5fc98ec87cac03237c55a55c967ed79b9695df7217d4ac968a"
         }
       ]
@@ -111,83 +111,83 @@
       "license": "see repo",
       "files": [
         {
-          "path": "/content/data/raw/fa2y_malicious/Invoke-ObfuscateRandomFiles.ps1",
+          "path": "/kaggle/working/data/raw/fa2y_malicious/Invoke-ObfuscateRandomFiles.ps1",
           "sha256": "ba4e1d443d7889773f2ae8f45942f66d41199d4c567ef58610850c855bfc6bfa"
         },
         {
-          "path": "/content/data/raw/fa2y_malicious/bazaar_out/0089970739fad5ebc14ec26b78eba1752eb41491992a35ae0763c73b718d5660.ps1",
+          "path": "/kaggle/working/data/raw/fa2y_malicious/bazaar_out/0089970739fad5ebc14ec26b78eba1752eb41491992a35ae0763c73b718d5660.ps1",
           "sha256": "0089970739fad5ebc14ec26b78eba1752eb41491992a35ae0763c73b718d5660"
         },
         {
-          "path": "/content/data/raw/fa2y_malicious/bazaar_out/00cef7ba9fa500deee68eafd286aa841d3e46443322958d8f8844c9aaa3949b2.ps1",
+          "path": "/kaggle/working/data/raw/fa2y_malicious/bazaar_out/00cef7ba9fa500deee68eafd286aa841d3e46443322958d8f8844c9aaa3949b2.ps1",
           "sha256": "00cef7ba9fa500deee68eafd286aa841d3e46443322958d8f8844c9aaa3949b2"
         },
         {
-          "path": "/content/data/raw/fa2y_malicious/bazaar_out/026ccb13ef7903f6cb39a85357181a613588b7118ea61b3580152aca02879638.ps1",
+          "path": "/kaggle/working/data/raw/fa2y_malicious/bazaar_out/026ccb13ef7903f6cb39a85357181a613588b7118ea61b3580152aca02879638.ps1",
           "sha256": "026ccb13ef7903f6cb39a85357181a613588b7118ea61b3580152aca02879638"
         },
         {
-          "path": "/content/data/raw/fa2y_malicious/bazaar_out/0352f8641a0a894364b873dccc2738ef9fa6dd606c95fc9db08392238cffe899.ps1",
+          "path": "/kaggle/working/data/raw/fa2y_malicious/bazaar_out/0352f8641a0a894364b873dccc2738ef9fa6dd606c95fc9db08392238cffe899.ps1",
           "sha256": "0352f8641a0a894364b873dccc2738ef9fa6dd606c95fc9db08392238cffe899"
         },
         {
-          "path": "/content/data/raw/fa2y_malicious/bazaar_out/035ee55b03afb96a70ca0cb79001a6ea3c33f9b6b8f85e816d21ab5faf9f21bf.ps1",
+          "path": "/kaggle/working/data/raw/fa2y_malicious/bazaar_out/035ee55b03afb96a70ca0cb79001a6ea3c33f9b6b8f85e816d21ab5faf9f21bf.ps1",
           "sha256": "035ee55b03afb96a70ca0cb79001a6ea3c33f9b6b8f85e816d21ab5faf9f21bf"
         },
         {
-          "path": "/content/data/raw/fa2y_malicious/bazaar_out/03f7cc3cfda880c17d3339c63bc87ee4af3d75fff81ff104741dea04e1f9752a.ps1",
+          "path": "/kaggle/working/data/raw/fa2y_malicious/bazaar_out/03f7cc3cfda880c17d3339c63bc87ee4af3d75fff81ff104741dea04e1f9752a.ps1",
           "sha256": "03f7cc3cfda880c17d3339c63bc87ee4af3d75fff81ff104741dea04e1f9752a"
         },
         {
-          "path": "/content/data/raw/fa2y_malicious/bazaar_out/046d4048e859b77f86cc4f0e583276a80b02f15c85565d56a7ef0ad2a60db917.ps1",
+          "path": "/kaggle/working/data/raw/fa2y_malicious/bazaar_out/046d4048e859b77f86cc4f0e583276a80b02f15c85565d56a7ef0ad2a60db917.ps1",
           "sha256": "046d4048e859b77f86cc4f0e583276a80b02f15c85565d56a7ef0ad2a60db917"
         },
         {
-          "path": "/content/data/raw/fa2y_malicious/bazaar_out/04d352615ee970fbfd3ec4f8e1692310bcf059339d14ad934d63bc9acb32e767.ps1",
+          "path": "/kaggle/working/data/raw/fa2y_malicious/bazaar_out/04d352615ee970fbfd3ec4f8e1692310bcf059339d14ad934d63bc9acb32e767.ps1",
           "sha256": "04d352615ee970fbfd3ec4f8e1692310bcf059339d14ad934d63bc9acb32e767"
         },
         {
-          "path": "/content/data/raw/fa2y_malicious/bazaar_out/04e09a2d4b77ece6e0e178d5cf8d1665048b834f481c66a3960d82d0eef51fea.ps1",
+          "path": "/kaggle/working/data/raw/fa2y_malicious/bazaar_out/04e09a2d4b77ece6e0e178d5cf8d1665048b834f481c66a3960d82d0eef51fea.ps1",
           "sha256": "04e09a2d4b77ece6e0e178d5cf8d1665048b834f481c66a3960d82d0eef51fea"
         },
         {
-          "path": "/content/data/raw/fa2y_malicious/bazaar_out/051269318be07b5c083b001ee816becb14bf45919ea9371c82de917fae7043f1.ps1",
+          "path": "/kaggle/working/data/raw/fa2y_malicious/bazaar_out/051269318be07b5c083b001ee816becb14bf45919ea9371c82de917fae7043f1.ps1",
           "sha256": "051269318be07b5c083b001ee816becb14bf45919ea9371c82de917fae7043f1"
         },
         {
-          "path": "/content/data/raw/fa2y_malicious/bazaar_out/054ca3d10e6696769835c8db9ba3bd09142237d21b5bddb013598053f6e0230a.ps1",
+          "path": "/kaggle/working/data/raw/fa2y_malicious/bazaar_out/054ca3d10e6696769835c8db9ba3bd09142237d21b5bddb013598053f6e0230a.ps1",
           "sha256": "054ca3d10e6696769835c8db9ba3bd09142237d21b5bddb013598053f6e0230a"
         },
         {
-          "path": "/content/data/raw/fa2y_malicious/bazaar_out/056deb6e3f5de68f9ae2b1ed11f7d3d398a3488387294937bebcb0f8f847b5c9.ps1",
+          "path": "/kaggle/working/data/raw/fa2y_malicious/bazaar_out/056deb6e3f5de68f9ae2b1ed11f7d3d398a3488387294937bebcb0f8f847b5c9.ps1",
           "sha256": "056deb6e3f5de68f9ae2b1ed11f7d3d398a3488387294937bebcb0f8f847b5c9"
         },
         {
-          "path": "/content/data/raw/fa2y_malicious/bazaar_out/05c2ce2a59b010993bade6495e647ccdc0f557d84df037ba8b81bb8c08a99900.ps1",
+          "path": "/kaggle/working/data/raw/fa2y_malicious/bazaar_out/05c2ce2a59b010993bade6495e647ccdc0f557d84df037ba8b81bb8c08a99900.ps1",
           "sha256": "05c2ce2a59b010993bade6495e647ccdc0f557d84df037ba8b81bb8c08a99900"
         },
         {
-          "path": "/content/data/raw/fa2y_malicious/bazaar_out/05daac7bbab4f98d298036f05b6ca784a38ac23f3a2b40fe764fdf5a13b89949.ps1",
+          "path": "/kaggle/working/data/raw/fa2y_malicious/bazaar_out/05daac7bbab4f98d298036f05b6ca784a38ac23f3a2b40fe764fdf5a13b89949.ps1",
           "sha256": "05daac7bbab4f98d298036f05b6ca784a38ac23f3a2b40fe764fdf5a13b89949"
         },
         {
-          "path": "/content/data/raw/fa2y_malicious/bazaar_out/0627d2a429f6e47620a7f0d409fdb0f2f1e0eb1d3cf31604cf8667b32f4408bf.ps1",
+          "path": "/kaggle/working/data/raw/fa2y_malicious/bazaar_out/0627d2a429f6e47620a7f0d409fdb0f2f1e0eb1d3cf31604cf8667b32f4408bf.ps1",
           "sha256": "0627d2a429f6e47620a7f0d409fdb0f2f1e0eb1d3cf31604cf8667b32f4408bf"
         },
         {
-          "path": "/content/data/raw/fa2y_malicious/bazaar_out/0650ef83b3fa0ba158db8f846b2702a03b90ce85d691c2cbcade2b95e8d9271f.ps1",
+          "path": "/kaggle/working/data/raw/fa2y_malicious/bazaar_out/0650ef83b3fa0ba158db8f846b2702a03b90ce85d691c2cbcade2b95e8d9271f.ps1",
           "sha256": "0650ef83b3fa0ba158db8f846b2702a03b90ce85d691c2cbcade2b95e8d9271f"
         },
         {
-          "path": "/content/data/raw/fa2y_malicious/bazaar_out/0666a55041e8c1247fb0b485b453e0235d120c854031e4b8db7f6f22354c6924.ps1",
+          "path": "/kaggle/working/data/raw/fa2y_malicious/bazaar_out/0666a55041e8c1247fb0b485b453e0235d120c854031e4b8db7f6f22354c6924.ps1",
           "sha256": "0666a55041e8c1247fb0b485b453e0235d120c854031e4b8db7f6f22354c6924"
         },
         {
-          "path": "/content/data/raw/fa2y_malicious/bazaar_out/06db102d1c5d9386cd8d13e22237b286e4ecf1869c84cc70f17da0d421ccad3d.ps1",
+          "path": "/kaggle/working/data/raw/fa2y_malicious/bazaar_out/06db102d1c5d9386cd8d13e22237b286e4ecf1869c84cc70f17da0d421ccad3d.ps1",
           "sha256": "06db102d1c5d9386cd8d13e22237b286e4ecf1869c84cc70f17da0d421ccad3d"
         },
         {
-          "path": "/content/data/raw/fa2y_malicious/bazaar_out/07106658bc0e608667a987849f8ef91fff217a5a05a94c64fdfd7e3d91ac436f.ps1",
+          "path": "/kaggle/working/data/raw/fa2y_malicious/bazaar_out/07106658bc0e608667a987849f8ef91fff217a5a05a94c64fdfd7e3d91ac436f.ps1",
           "sha256": "07106658bc0e608667a987849f8ef91fff217a5a05a94c64fdfd7e3d91ac436f"
         }
       ]
@@ -241,8 +241,8 @@
   },
   "processed_artifacts": {
     "powershell_corpus_deduped.parquet": {
-      "sha256": "56fee8b31714193a78d6d4538b6efc60b77343ad75fbcececfa61013aae7988b",
-      "row_count": 19386,
+      "sha256": "26c988edf9ebe8e324e4781421db37dff9e116b696fdd1b74d5bc1b034d75857",
+      "row_count": 13209,
       "columns": [
         "sha256",
         "source",
