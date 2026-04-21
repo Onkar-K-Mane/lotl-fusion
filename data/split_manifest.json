@@ -1,0 +1,144 @@
+{
+  "seeds": [
+    42,
+    1337,
+    2024
+  ],
+  "train_frac": 0.7,
+  "val_frac": 0.15,
+  "test_frac": 0.15,
+  "c2_target_prevalence": 0.1,
+  "stratified_by": [
+    "source",
+    "label"
+  ],
+  "per_seed": {
+    "42": {
+      "train": {
+        "file": "data/processed/splits/train_seed42.parquet",
+        "sha256": "b47da2185d832adcf03673128ae49a8322af49a732e9408df3f9b2347d2a424e",
+        "rows": 9245,
+        "benign": 3017,
+        "malicious": 6228,
+        "malicious_prevalence": 0.6737
+      },
+      "val": {
+        "file": "data/processed/splits/val_seed42.parquet",
+        "sha256": "d05ad9f716c00d45606027d517971d536990828c3c898f7f63a0b7d513f95d60",
+        "rows": 1979,
+        "benign": 646,
+        "malicious": 1333,
+        "malicious_prevalence": 0.6736
+      },
+      "test": {
+        "file": "data/processed/splits/test_seed42.parquet",
+        "sha256": "c113304b83eb17018c7fbf5bde0537fb2de46aec02fc561e5844ff6bb895fad7",
+        "rows": 1985,
+        "benign": 647,
+        "malicious": 1338,
+        "malicious_prevalence": 0.6741
+      },
+      "test_c2": {
+        "file": "data/processed/splits/test_c2_seed42.parquet",
+        "sha256": "12fa094c1e663e716ab4cc3e0ac063bb8d20efce8952ca98d82cffd3aa957c02",
+        "rows": 718,
+        "benign": 647,
+        "malicious": 71,
+        "malicious_prevalence": 0.0989
+      },
+      "c2_meta": {
+        "benign_kept": 647,
+        "malicious_kept": 71,
+        "malicious_available": 1338,
+        "target_prevalence": 0.1,
+        "actual_prevalence": 0.0988857938718663,
+        "c2_violated": false
+      }
+    },
+    "1337": {
+      "train": {
+        "file": "data/processed/splits/train_seed1337.parquet",
+        "sha256": "4b9925a9364b9b62da785427f598876a309824778fcf261a81774ac957c52077",
+        "rows": 9245,
+        "benign": 3017,
+        "malicious": 6228,
+        "malicious_prevalence": 0.6737
+      },
+      "val": {
+        "file": "data/processed/splits/val_seed1337.parquet",
+        "sha256": "3cfe67febc64b988180d04ca5557d43460aa8c2c4b89f00436233eefb106e417",
+        "rows": 1979,
+        "benign": 646,
+        "malicious": 1333,
+        "malicious_prevalence": 0.6736
+      },
+      "test": {
+        "file": "data/processed/splits/test_seed1337.parquet",
+        "sha256": "aea1e8145d010a211ae871e0ef12fd75cc14d980e07686b553bde5c34c939cd5",
+        "rows": 1985,
+        "benign": 647,
+        "malicious": 1338,
+        "malicious_prevalence": 0.6741
+      },
+      "test_c2": {
+        "file": "data/processed/splits/test_c2_seed1337.parquet",
+        "sha256": "f7dbe82280f3174d7106d391b100f4d8899b984c42c52b49fa50e334023f78e4",
+        "rows": 718,
+        "benign": 647,
+        "malicious": 71,
+        "malicious_prevalence": 0.0989
+      },
+      "c2_meta": {
+        "benign_kept": 647,
+        "malicious_kept": 71,
+        "malicious_available": 1338,
+        "target_prevalence": 0.1,
+        "actual_prevalence": 0.0988857938718663,
+        "c2_violated": false
+      }
+    },
+    "2024": {
+      "train": {
+        "file": "data/processed/splits/train_seed2024.parquet",
+        "sha256": "8701f02afc035cda9865f02d44fdc7da835c8a6061bebbf16fc87ba37966c191",
+        "rows": 9245,
+        "benign": 3017,
+        "malicious": 6228,
+        "malicious_prevalence": 0.6737
+      },
+      "val": {
+        "file": "data/processed/splits/val_seed2024.parquet",
+        "sha256": "74ba21674e5ddf3087e03ea6fcf7a04fd484d3321b4d6935f17612cd025e5df5",
+        "rows": 1979,
+        "benign": 646,
+        "malicious": 1333,
+        "malicious_prevalence": 0.6736
+      },
+      "test": {
+        "file": "data/processed/splits/test_seed2024.parquet",
+        "sha256": "71e5b7526faee3c9060923a1ebf19c78e4eae4b0a1fe90452499dcdee264d614",
+        "rows": 1985,
+        "benign": 647,
+        "malicious": 1338,
+        "malicious_prevalence": 0.6741
+      },
+      "test_c2": {
+        "file": "data/processed/splits/test_c2_seed2024.parquet",
+        "sha256": "4a4fbf830df63773892c2beebad077ca510f48286db3a151e25fb52f3b03a47a",
+        "rows": 718,
+        "benign": 647,
+        "malicious": 71,
+        "malicious_prevalence": 0.0989
+      },
+      "c2_meta": {
+        "benign_kept": 647,
+        "malicious_kept": 71,
+        "malicious_available": 1338,
+        "target_prevalence": 0.1,
+        "actual_prevalence": 0.0988857938718663,
+        "c2_violated": false
+      }
+    }
+  },
+  "last_updated": "2026-04-21T02:52:37.647679+00:00"
+}
